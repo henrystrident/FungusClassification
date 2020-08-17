@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
-from .utils import load_state_dict_from_url
-import numpy as np
+import torch.utils.model_zoo as model_zoo
+from ._utils import load_state_dict_from_url
 
 
 __all__ = ['VGG','vgg19_bn', 'vgg19']
@@ -19,7 +19,7 @@ class VGG(nn.Module):
         super(VGG, self).__init__()
         self.features = features
         self.avgpool = nn.AdaptiveAvgPool2d((7, 7))
-        self.classifier = nn.Sequential(
+        self.reg_layer = nn.Sequential(
             nn.Linear(512 * 7 * 7, 4096),
             nn.ReLU(True),
             nn.Dropout(),
@@ -35,7 +35,7 @@ class VGG(nn.Module):
         x = self.features(x)
         x = self.avgpool(x)
         x = torch.flatten(x, 1)
-        x = self.classifier(x)
+        x = self.reg_layer(x)
         return x
 
     def _initialize_weights(self):
@@ -80,7 +80,8 @@ def _vgg(arch, cfg, batch_norm, pretrained, progress, **kwargs):
     if pretrained:
         state_dict = load_state_dict_from_url(model_urls[arch],
                                               progress=progress)
-        model.load_state_dict(state_dict)
+
+        model.load_state_dict(state_dict, strict=False)
     return model
 
 

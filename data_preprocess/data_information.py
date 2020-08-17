@@ -2,7 +2,7 @@ from data_preprocess.category import mushroom
 
 
 if __name__ == '__main__':
-    root_path = "/home/pgj/PycharmProjects/FungusClassification/original_img"
+    root_path = "/home/pgj/PycharmProjects/FungusClassification/preprocessed_img"
 
     agaric = mushroom("agaric", root_path)
     bolete = mushroom("bolete", root_path)

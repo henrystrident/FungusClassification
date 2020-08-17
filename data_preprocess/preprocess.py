@@ -70,4 +70,4 @@ def generate_val_list():
 
 
 if __name__ == '__main__':
-    generate_val_list()
+    pass
