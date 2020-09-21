@@ -2,6 +2,7 @@ import torch.utils.data as Data
 from PIL import Image
 from torchvision.transforms import transforms
 
+
 class mushroom_dataset(Data.Dataset):
     """
     菌类数据集，返回图片和标签

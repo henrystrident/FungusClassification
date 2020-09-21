@@ -1,6 +1,7 @@
 import os
 import cv2
 
+
 class mushroom:
     def __init__(self, category: str, path: str):
         assert category in ["agaric", "bolete", "discomycete", "lichen"]
@@ -21,7 +22,6 @@ class mushroom:
     @property
     def category(self):
         return self.__category
-
 
     @property
     def foot_path(self):
@@ -66,14 +66,14 @@ class mushroom:
         """
         for train_img_path in os.listdir(self.train_path):
             self.__train_count += 1
-            img = cv2.imread(os.path.join(self.train_path, train_img_path)) # cv2读取图片格式为(width, height, channel)
-            width, height = img.shape[0], img.shape[1]
-            self.__max_width = max(self.__max_width, width)
-            self.__max_height = max(self.__max_height, height)
-            self.__avg_width += width
-            self.__avg_height += height
-        self.__avg_height = round(self.__avg_height/self.__train_count)
-        self.__avg_width = round(self.__avg_width/self.__train_count)
+            # img = cv2.imread(os.path.join(self.train_path, train_img_path)) # cv2读取图片格式为(width, height, channel)
+        #     width, height = img.shape[0], img.shape[1]
+        #     self.__max_width = max(self.__max_width, width)
+        #     self.__max_height = max(self.__max_height, height)
+        #     self.__avg_width += width
+        #     self.__avg_height += height
+        # self.__avg_height = round(self.__avg_height/self.__train_count)
+        # self.__avg_width = round(self.__avg_width/self.__train_count)
 
         for val_img in os.listdir(self.val_path):
             self.__val_count += 1
