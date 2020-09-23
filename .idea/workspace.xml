@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11309224-adb8-4260-b6c2-f11720220070" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FungusClassification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FungusClassification.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_preprocess/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_preprocess/data_information.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/data_information.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/preprocess-500.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/preprocess-500.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/generate_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/generate_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_utils/regression_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_utils/regression_trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/实验报告.md" beforeDir="false" afterPath="$PROJECT_DIR$/实验报告.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +52,8 @@
       <recent name="D:\PycharmProjects\FungusClassification\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.preprocess-500">
-    <configuration name="data_information" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.train">
+    <configuration name="experiment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FungusClassification" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,12 +61,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_preprocess" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preprocess/data_information.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FungusClassification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataset" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset/generate_dataset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,28 +141,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="FungusClassification" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FungusClassification" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.preprocess-500" />
-        <item itemvalue="Python.data_information" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.regression_trainer" />
+        <item itemvalue="Python.experiment" />
+        <item itemvalue="Python.generate_dataset" />
+        <item itemvalue="Python.preprocess-500" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +192,8 @@
       <workItem from="1600415470793" duration="487000" />
       <workItem from="1600501776681" duration="193000" />
       <workItem from="1600650990315" duration="5698000" />
-      <workItem from="1600669781123" duration="8693000" />
+      <workItem from="1600669781123" duration="9058000" />
+      <workItem from="1600735983111" duration="20437000" />
     </task>
     <servers />
   </component>
@@ -208,53 +207,57 @@
     <state x="321" y="-927" key="#Deployment/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600674641875" />
     <state x="321" y="-927" key="#Deployment/-1024.155.1024.745/-151.-1080.1920.1080/0.23.1440.877@-151.-1080.1920.1080" timestamp="1600654710591" />
     <state x="233" y="0" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1597412019345" />
-    <state x="199" y="-1080" key="#Options" timestamp="1600674655567">
+    <state x="199" y="-1080" key="#Options" timestamp="1600737158345">
       <screen x="-151" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="199" y="-1080" key="#Options/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600674655567" />
+    <state x="199" y="-1080" key="#Options/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600737158345" />
     <state x="233" y="0" key="#Options/0.0.1280.680@0.0.1280.680" timestamp="1597389479902" />
     <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1597462431159">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1597462431159" />
-    <state width="1878" height="387" key="GridCell.Tab.0.bottom" timestamp="1600679490790">
-      <screen x="-151" y="-1080" width="1920" height="1080" />
+    <state width="1878" height="387" key="GridCell.Tab.0.bottom" timestamp="1600828338332">
+      <screen x="-245" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.bottom/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600679490790" />
+    <state width="1878" height="387" key="GridCell.Tab.0.bottom/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600823768957" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/-1024.155.1024.745/-151.-1057.1920.1057/0.23.1440.877@-151.-1057.1920.1057" timestamp="1600669758197" />
     <state width="1878" height="387" key="GridCell.Tab.0.bottom/-1024.155.1024.745/-151.-1080.1920.1080/0.23.1440.877@-151.-1080.1920.1080" timestamp="1600671235328" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/-1024.181.1024.768/0.0.1440.900@0.0.1440.900" timestamp="1600415681538" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/-1024.204.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1600415435424" />
+    <state width="1878" height="387" key="GridCell.Tab.0.bottom/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1600828338332" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/-245.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1600480314383" />
     <state width="1237" height="393" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597657427164" />
-    <state width="1878" height="387" key="GridCell.Tab.0.center" timestamp="1600679490788">
-      <screen x="-151" y="-1080" width="1920" height="1080" />
+    <state width="1878" height="387" key="GridCell.Tab.0.center" timestamp="1600828338329">
+      <screen x="-245" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.center/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600679490788" />
+    <state width="1878" height="387" key="GridCell.Tab.0.center/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600823768953" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/-1024.155.1024.745/-151.-1057.1920.1057/0.23.1440.877@-151.-1057.1920.1057" timestamp="1600669758196" />
     <state width="1878" height="387" key="GridCell.Tab.0.center/-1024.155.1024.745/-151.-1080.1920.1080/0.23.1440.877@-151.-1080.1920.1080" timestamp="1600671235324" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/-1024.181.1024.768/0.0.1440.900@0.0.1440.900" timestamp="1600415681535" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/-1024.204.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1600415435420" />
+    <state width="1878" height="387" key="GridCell.Tab.0.center/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1600828338329" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/-245.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1600480314380" />
     <state width="1237" height="393" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597657427164" />
-    <state width="1878" height="387" key="GridCell.Tab.0.left" timestamp="1600679490787">
-      <screen x="-151" y="-1080" width="1920" height="1080" />
+    <state width="1878" height="387" key="GridCell.Tab.0.left" timestamp="1600828338328">
+      <screen x="-245" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.left/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600679490787" />
+    <state width="1878" height="387" key="GridCell.Tab.0.left/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600823768951" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/-1024.155.1024.745/-151.-1057.1920.1057/0.23.1440.877@-151.-1057.1920.1057" timestamp="1600669758196" />
     <state width="1878" height="387" key="GridCell.Tab.0.left/-1024.155.1024.745/-151.-1080.1920.1080/0.23.1440.877@-151.-1080.1920.1080" timestamp="1600671235322" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/-1024.181.1024.768/0.0.1440.900@0.0.1440.900" timestamp="1600415681533" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/-1024.204.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1600415435417" />
+    <state width="1878" height="387" key="GridCell.Tab.0.left/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1600828338328" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/-245.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1600480314378" />
     <state width="1237" height="393" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597657427164" />
-    <state width="1878" height="387" key="GridCell.Tab.0.right" timestamp="1600679490789">
-      <screen x="-151" y="-1080" width="1920" height="1080" />
+    <state width="1878" height="387" key="GridCell.Tab.0.right" timestamp="1600828338331">
+      <screen x="-245" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.right/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600679490789" />
+    <state width="1878" height="387" key="GridCell.Tab.0.right/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600823768955" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/-1024.155.1024.745/-151.-1057.1920.1057/0.23.1440.877@-151.-1057.1920.1057" timestamp="1600669758196" />
     <state width="1878" height="387" key="GridCell.Tab.0.right/-1024.155.1024.745/-151.-1080.1920.1080/0.23.1440.877@-151.-1080.1920.1080" timestamp="1600671235326" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/-1024.181.1024.768/0.0.1440.900@0.0.1440.900" timestamp="1600415681537" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/-1024.204.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1600415435422" />
+    <state width="1878" height="387" key="GridCell.Tab.0.right/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1600828338331" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/-245.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1600480314382" />
     <state width="1237" height="393" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597657427164" />
     <state x="444" y="63" key="RollbackChangesDialog" timestamp="1597498016116">
@@ -287,12 +290,14 @@
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1597657344029" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FungusClassification$regression_trainer.coverage" NAME="regression_trainer Coverage Results" MODIFIED="1597651638630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/train_utils" />
+    <SUITE FILE_PATH="coverage/FungusClassification$regression_trainer.coverage" NAME="regression_trainer Coverage Results" MODIFIED="1600827907845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/train_utils" />
     <SUITE FILE_PATH="coverage/FungusClassification$MobileNet.coverage" NAME="MobileNet Coverage Results" MODIFIED="1597391080555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
     <SUITE FILE_PATH="coverage/FungusClassification$test.coverage" NAME="test Coverage Results" MODIFIED="1600414174135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FungusClassification$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1597501756997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
-    <SUITE FILE_PATH="coverage/FungusClassification$train.coverage" NAME="train Coverage Results" MODIFIED="1600414152616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FungusClassification$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1600827882469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FungusClassification$data_information.coverage" NAME="data_information Coverage Results" MODIFIED="1600415564955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
-    <SUITE FILE_PATH="coverage/FungusClassification$preprocess_500.coverage" NAME="preprocess-500 Coverage Results" MODIFIED="1600679236272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
+    <SUITE FILE_PATH="coverage/FungusClassification$preprocess_500.coverage" NAME="preprocess-500 Coverage Results" MODIFIED="1600736645381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
+    <SUITE FILE_PATH="coverage/FungusClassification$train.coverage" NAME="train Coverage Results" MODIFIED="1600828338312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FungusClassification$generate_dataset.coverage" NAME="generate_dataset Coverage Results" MODIFIED="1600737718268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataset" />
   </component>
 </project>

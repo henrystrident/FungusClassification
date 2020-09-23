@@ -22,7 +22,7 @@ category_dict = {"agaric": 0,
 def generate_random_index(rate: list):
     """
     以某个概率列表进行加权随机生成数字
-    :param rate: 加权列表，元素为整数
+    :params rate: 加权列表，元素为整数
     :return: 下标
     """
     random_num = random.randrange(0, sum(rate))
@@ -36,9 +36,9 @@ def generate_random_index(rate: list):
 def generate_data_dir(mode: str, count: int, category: str):
     """
     根据参数生成对应的图片集
-    :param mode: 训练还是测试
-    :param count: 图片集中图片的数量
-    :param category: 菌物种类
+    :params mode: 训练还是测试
+    :params count: 图片集中图片的数量
+    :params category: 菌物种类
     :return:
     """
     save_dir = os.path.join(save_root+"/"+mode, category)
@@ -73,7 +73,7 @@ def save_photo():
 def generate_file_list(mode: str):
     """
     根据训练和测试集生成训练和测试列表
-    :param mode: 训练还是测试
+    :params mode: 训练还是测试
     :return:
     """
     file_path = "/home/pgj/MushroomClassification/"+mode+".txt"

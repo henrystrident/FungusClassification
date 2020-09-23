@@ -10,13 +10,13 @@ class mushroom_dataset(Data.Dataset):
     def __init__(self, mode:str):
         """
         将文件中的所有路径和标签读到列表中
-        :param mode: 模式
+        :params mode: 模式
         """
 
         super(mushroom_dataset, self).__init__()
         assert mode in ["train", "val"]
         self.__mode=  mode
-        self.__file_path = "/home/pgj/PycharmProjects/FungusClassification/"+self.__mode+".txt"
+        self.__file_path = "/home/pgj/MushroomClassification/"+self.__mode+".txt"
         self.__data_list = []
 
         with open(self.__file_path, "r") as f:
