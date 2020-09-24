@@ -30,7 +30,8 @@ class mushroom_dataset(Data.Dataset):
         img_path, label = data
         img = Image.open(img_path).convert("RGB")
         transform = transforms.Compose([transforms.Resize((224, 224)),
-                                        transforms.ToTensor()]) if self.__mode=="train" else transforms.ToTensor()
+                                        transforms.ToTensor(),
+                                        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
         img = transform(img)
         return img, label
 

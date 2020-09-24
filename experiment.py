@@ -7,7 +7,11 @@
 from dataset.generate_dataset import mushroom_dataset
 from model.VGG import vgg19_bn
 from torch.utils.data import DataLoader
+from torch.utils.tensorboard import SummaryWriter
+import random
 import torch
+import numpy as np
+import torch.nn as nn
 
 
 if __name__ == '__main__':
@@ -19,16 +23,10 @@ if __name__ == '__main__':
                             pin_memory=True)
     model = vgg19_bn(num_classes=4,
                      init_weights=False)
-    with torch.set_grad_enabled(False):
-        model.eval()
-        model.to(torch.device("cuda"))
-        for step, (imgs, labels) in enumerate(dataloader):
-            imgs = imgs.to(torch.device("cuda"))
-            print(imgs)
-            print(labels)
-            labels = labels.to(torch.device("cuda"))
-            outputs = model(imgs)
-            p = torch.softmax(outputs, dim=1)
-            print(p)
-            print(torch.max(p, dim=1).indices.reshape(-1, 1))
-            break
+    model.to(torch.device("cuda"))
+    criterion = nn.CrossEntropyLoss()
+    for step, (imgs, labels) in enumerate(dataloader):
+        imgs = imgs.to(torch.device("cuda"))
+        labels = labels.to(torch.device("cuda"))
+        loss = criterion(model(imgs), labels)
+        print(step, loss)
