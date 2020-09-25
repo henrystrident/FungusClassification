@@ -18,7 +18,7 @@
 实验室暑假里由于安全问题关闭过所有服务器，我的电脑重启之后发现原来的frpc客户端我发正常开启，所以重新安装了一次。一开始下载成 `arm_64` 版本的了，无法启动，正确版本应当是 `amd_64`。当前版本的frpc需要先通过 `chmod+x <文件名>` 授予权限，开启后输入密钥，选择隧道IP即可使用。
 
 ## 远程环境部署
-- 通过Pycharm的远程部署功能直接在服务器端新建项目，要注意的是 `tools -> development -> Configuraion` 中需要选择==mappings==有远程了路径的那个连接。
+- 通过Pycharm的远程部署功能直接在服务器端新建项目，要注意的是 `tools -> development -> Configuraion` 中需要选择**mappings**有远程路径的那个连接。
 - 本次项目的环境：Ubuntu18.04 + Pytorch1.6-GPU + Pycharm + CUDA10.0（Pytorch要求10.1，就目前来看10.0也能用）
 
 

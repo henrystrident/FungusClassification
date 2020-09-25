@@ -16,7 +16,7 @@ class mushroom_dataset(Data.Dataset):
         super(mushroom_dataset, self).__init__()
         assert mode in ["train", "val"]
         self.__mode=  mode
-        self.__file_path = "/home/pgj/MushroomClassification/"+self.__mode+".txt"
+        self.__file_path = "/home/pgj/MushroomClassification/"+self.__mode+"-2000.txt"
         self.__data_list = []
 
         with open(self.__file_path, "r") as f:

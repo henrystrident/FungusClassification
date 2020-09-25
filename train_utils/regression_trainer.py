@@ -71,7 +71,7 @@ class Trainer:
                 loss = self.__criterion(outputs, labels)
                 loss.backward()
                 self.__optimizer.step()
-                self.__writer.add_scalar("Loss/train", np.array(loss.to(torch.device("cpu")).data).item())
+            self.__writer.add_scalar("Loss/train", np.array(loss.to(torch.device("cpu")).data).item(), epoch)
         return time.time()-start
 
     def epoch_val(self, epoch):
