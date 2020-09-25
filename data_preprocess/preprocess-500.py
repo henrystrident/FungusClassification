@@ -8,7 +8,7 @@
 import os
 import cv2
 import random
-
+from utils.random import generate_random_index
 
 
 root_path = "/mnt/data/pgj/funguses" #  所有训练图片的存放路径，下面有四个类别
@@ -17,20 +17,6 @@ category_dict = {"agaric": 0,
                  "bolete": 1,
                  "discomycete": 2,
                  "lichen": 3}
-
-
-def generate_random_index(rate: list):
-    """
-    以某个概率列表进行加权随机生成数字
-    :params rate: 加权列表，元素为整数
-    :return: 下标
-    """
-    random_num = random.randrange(0, sum(rate))
-    split_index = 0 #  区间分隔符
-    for index, scope in enumerate(rate):
-        split_index += scope
-        if random_num <= split_index:
-            return index
 
 
 def generate_data_dir(mode: str, count: int, category: str):
@@ -85,4 +71,4 @@ def generate_file_list(mode: str):
 
 
 if __name__ == '__main__':
-    generate_file_list("val")
+    pass
