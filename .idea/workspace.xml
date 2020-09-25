@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="11309224-adb8-4260-b6c2-f11720220070" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/generate_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/generate_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/preprocess-500.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/preprocess-500.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_utils/regression_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_utils/regression_trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/实验报告.md" beforeDir="false" afterPath="$PROJECT_DIR$/实验报告.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +71,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="generate_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="preprocess-2000" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FungusClassification" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,12 +79,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataset" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_preprocess" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset/generate_dataset.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preprocess/preprocess-2000.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,10 +162,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.train" />
+        <item itemvalue="Python.preprocess-2000" />
         <item itemvalue="Python.experiment" />
         <item itemvalue="Python.regression_trainer" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.generate_dataset" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +189,9 @@
       <workItem from="1600501776681" duration="193000" />
       <workItem from="1600650990315" duration="5698000" />
       <workItem from="1600669781123" duration="9058000" />
-      <workItem from="1600735983111" duration="44987000" />
+      <workItem from="1600735983111" duration="45623000" />
+      <workItem from="1600938720493" duration="696000" />
+      <workItem from="1600994412087" duration="11207000" />
     </task>
     <servers />
   </component>
@@ -223,51 +222,51 @@
       <screen x="-245" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-145" y="-980" width="1720" height="880" key="DirDiffDialog/-245.-1080.1920.1080/0.23.1440.877@-245.-1080.1920.1080" timestamp="1600841419214" />
-    <state width="1878" height="387" key="GridCell.Tab.0.bottom" timestamp="1600933525009">
-      <screen x="-151" y="-1080" width="1920" height="1080" />
+    <state width="1878" height="387" key="GridCell.Tab.0.bottom" timestamp="1601018279052">
+      <screen x="-245" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.bottom/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600933525009" />
+    <state width="1878" height="387" key="GridCell.Tab.0.bottom/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1601014384804" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/-1024.155.1024.745/-151.-1057.1920.1057/0.23.1440.877@-151.-1057.1920.1057" timestamp="1600669758197" />
     <state width="1878" height="387" key="GridCell.Tab.0.bottom/-1024.155.1024.745/-151.-1080.1920.1080/0.23.1440.877@-151.-1080.1920.1080" timestamp="1600909246457" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/-1024.181.1024.768/0.0.1440.900@0.0.1440.900" timestamp="1600415681538" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/-1024.204.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1600415435424" />
-    <state width="1878" height="387" key="GridCell.Tab.0.bottom/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1600930090379" />
+    <state width="1878" height="387" key="GridCell.Tab.0.bottom/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1601018279052" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/-245.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1600480314383" />
     <state width="1878" height="387" key="GridCell.Tab.0.bottom/-245.-1080.1920.1080/0.23.1440.877@-245.-1080.1920.1080" timestamp="1600928438826" />
     <state width="1237" height="393" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597657427164" />
-    <state width="1878" height="387" key="GridCell.Tab.0.center" timestamp="1600933525005">
-      <screen x="-151" y="-1080" width="1920" height="1080" />
+    <state width="1878" height="387" key="GridCell.Tab.0.center" timestamp="1601018279049">
+      <screen x="-245" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.center/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600933525005" />
+    <state width="1878" height="387" key="GridCell.Tab.0.center/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1601014384803" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/-1024.155.1024.745/-151.-1057.1920.1057/0.23.1440.877@-151.-1057.1920.1057" timestamp="1600669758196" />
     <state width="1878" height="387" key="GridCell.Tab.0.center/-1024.155.1024.745/-151.-1080.1920.1080/0.23.1440.877@-151.-1080.1920.1080" timestamp="1600909246455" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/-1024.181.1024.768/0.0.1440.900@0.0.1440.900" timestamp="1600415681535" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/-1024.204.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1600415435420" />
-    <state width="1878" height="387" key="GridCell.Tab.0.center/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1600930090375" />
+    <state width="1878" height="387" key="GridCell.Tab.0.center/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1601018279049" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/-245.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1600480314380" />
     <state width="1878" height="387" key="GridCell.Tab.0.center/-245.-1080.1920.1080/0.23.1440.877@-245.-1080.1920.1080" timestamp="1600928438824" />
     <state width="1237" height="393" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597657427164" />
-    <state width="1878" height="387" key="GridCell.Tab.0.left" timestamp="1600933525002">
-      <screen x="-151" y="-1080" width="1920" height="1080" />
+    <state width="1878" height="387" key="GridCell.Tab.0.left" timestamp="1601018279046">
+      <screen x="-245" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.left/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600933525002" />
+    <state width="1878" height="387" key="GridCell.Tab.0.left/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1601014384802" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/-1024.155.1024.745/-151.-1057.1920.1057/0.23.1440.877@-151.-1057.1920.1057" timestamp="1600669758196" />
     <state width="1878" height="387" key="GridCell.Tab.0.left/-1024.155.1024.745/-151.-1080.1920.1080/0.23.1440.877@-151.-1080.1920.1080" timestamp="1600909246453" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/-1024.181.1024.768/0.0.1440.900@0.0.1440.900" timestamp="1600415681533" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/-1024.204.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1600415435417" />
-    <state width="1878" height="387" key="GridCell.Tab.0.left/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1600930090373" />
+    <state width="1878" height="387" key="GridCell.Tab.0.left/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1601018279046" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/-245.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1600480314378" />
     <state width="1878" height="387" key="GridCell.Tab.0.left/-245.-1080.1920.1080/0.23.1440.877@-245.-1080.1920.1080" timestamp="1600928438823" />
     <state width="1237" height="393" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597657427164" />
-    <state width="1878" height="387" key="GridCell.Tab.0.right" timestamp="1600933525007">
-      <screen x="-151" y="-1080" width="1920" height="1080" />
+    <state width="1878" height="387" key="GridCell.Tab.0.right" timestamp="1601018279051">
+      <screen x="-245" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.right/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1600933525007" />
+    <state width="1878" height="387" key="GridCell.Tab.0.right/-1024.132.1024.768/-151.-1080.1920.1080/0.0.1440.900@-151.-1080.1920.1080" timestamp="1601014384804" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/-1024.155.1024.745/-151.-1057.1920.1057/0.23.1440.877@-151.-1057.1920.1057" timestamp="1600669758196" />
     <state width="1878" height="387" key="GridCell.Tab.0.right/-1024.155.1024.745/-151.-1080.1920.1080/0.23.1440.877@-151.-1080.1920.1080" timestamp="1600909246456" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/-1024.181.1024.768/0.0.1440.900@0.0.1440.900" timestamp="1600415681537" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/-1024.204.1024.745/0.23.1440.877@0.23.1440.877" timestamp="1600415435422" />
-    <state width="1878" height="387" key="GridCell.Tab.0.right/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1600930090377" />
+    <state width="1878" height="387" key="GridCell.Tab.0.right/-245.-1080.1920.1080/0.0.1440.900@-245.-1080.1920.1080" timestamp="1601018279051" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/-245.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1600480314382" />
     <state width="1878" height="387" key="GridCell.Tab.0.right/-245.-1080.1920.1080/0.23.1440.877@-245.-1080.1920.1080" timestamp="1600928438825" />
     <state width="1237" height="393" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597657427164" />
@@ -303,13 +302,14 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FungusClassification$regression_trainer.coverage" NAME="regression_trainer Coverage Results" MODIFIED="1600908447616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/train_utils" />
+    <SUITE FILE_PATH="coverage/FungusClassification$preprocess_2000.coverage" NAME="preprocess-2000 Coverage Results" MODIFIED="1601017921593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
     <SUITE FILE_PATH="coverage/FungusClassification$MobileNet.coverage" NAME="MobileNet Coverage Results" MODIFIED="1597391080555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
     <SUITE FILE_PATH="coverage/FungusClassification$test.coverage" NAME="test Coverage Results" MODIFIED="1600849534228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FungusClassification$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1597501756997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
-    <SUITE FILE_PATH="coverage/FungusClassification$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1600914346512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FungusClassification$experiment.coverage" NAME="experiment Coverage Results" MODIFIED="1601016324466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FungusClassification$data_information.coverage" NAME="data_information Coverage Results" MODIFIED="1600415564955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
     <SUITE FILE_PATH="coverage/FungusClassification$preprocess_500.coverage" NAME="preprocess-500 Coverage Results" MODIFIED="1600736645381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
-    <SUITE FILE_PATH="coverage/FungusClassification$train.coverage" NAME="train Coverage Results" MODIFIED="1600931112410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FungusClassification$train.coverage" NAME="train Coverage Results" MODIFIED="1601018074986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FungusClassification$generate_dataset.coverage" NAME="generate_dataset Coverage Results" MODIFIED="1600737718268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataset" />
   </component>
 </project>
