@@ -7,7 +7,7 @@ class mushroom_dataset(Data.Dataset):
     """
     菌类数据集，返回图片和标签
     """
-    def __init__(self, mode:str):
+    def __init__(self, mode:str, count:int):
         """
         将文件中的所有路径和标签读到列表中
         :params mode: 模式
@@ -16,7 +16,7 @@ class mushroom_dataset(Data.Dataset):
         super(mushroom_dataset, self).__init__()
         assert mode in ["train", "val"]
         self.__mode=  mode
-        self.__file_path = "/home/pgj/MushroomClassification/"+self.__mode+"-2000.txt"
+        self.__file_path = "/home/pgj/MushroomClassification/"+self.__mode+"-"+count.__str__()+".txt"
         self.__data_list = []
 
         with open(self.__file_path, "r") as f:

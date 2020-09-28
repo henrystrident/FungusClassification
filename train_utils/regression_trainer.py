@@ -16,14 +16,14 @@ default_save_dir = "/home/pgj/MushroomClassification/params"
 
 
 class Trainer:
-    def __init__(self, max_epoch:int, batch_size=32 ,lr=3e-4, weight_decay=1e-3, save_path=default_save_dir):
+    def __init__(self, max_epoch:int, batch_size=32 ,count=2000,lr=3e-4, weight_decay=1e-3, save_path=default_save_dir):
 
         self.__max_epoch = max_epoch
         self.__batch_size = batch_size
         self.__lr = lr
         self.__weight_decay = weight_decay
 
-        self.__datasets = {x: mushroom_dataset(x) for x in ["train", "val"]}
+        self.__datasets = {x: mushroom_dataset(x, count) for x in ["train", "val"]}
         self.__dataloaders = {x: DataLoader(dataset=self.__datasets[x],
                                             batch_size=self.__batch_size if x == "train" else 1,
                                             shuffle=True,

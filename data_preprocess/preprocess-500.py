@@ -69,20 +69,5 @@ def save_photo():
 
 
 
-
-def generate_file_list(mode: str):
-    """
-    根据训练和测试集生成训练和测试列表
-    :params mode: 训练还是测试
-    :return:
-    """
-    file_path = "/home/pgj/MushroomClassification/"+mode+".txt"
-    with open(file_path, "w") as file:
-        for category in category_dict:
-            img_dir = os.path.join(save_root+"/"+mode, category)
-            for img_name in os.listdir(img_dir):
-                file.write(os.path.join(img_dir, img_name)+" "+category_dict[category].__str__()+"\n")
-
-
 if __name__ == '__main__':
-    generate_file_list("val")
+    pass

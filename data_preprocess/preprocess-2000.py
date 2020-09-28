@@ -57,20 +57,6 @@ def generate_photo_dir(mode: str, category: str):
     print(category+" "+mode+" has "+len(os.listdir(save_dir)).__str__())
 
 
-def generate_file_list(mode: str):
-    """
-    根据处理好的图片进行训练和预测列表的生成
-    :return:
-    """
-    file_path = "/home/pgj/MushroomClassification/" + mode + "-2000.txt"
-    with open(file_path, "w") as f:
-        for category in category_dict:
-            img_dir = os.path.join(save_root+"/"+mode, category)
-            for img_name in os.listdir(img_dir):
-                img_path = os.path.join(img_dir, img_name)
-                f.write(img_path+" "+category_dict[category].__str__()+"\n")
-
-
 
 if __name__ == '__main__':
     pass
