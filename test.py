@@ -76,8 +76,8 @@ class Test:
 
 
 if __name__ == '__main__':
-    test = Test(count=467,
+    test = Test(count=2000,
                 model_category="mobileNet",
-                model_name="mobileNet_467.pth")
+                model_name="mobileNet_2000.pth")
     test.inference_total()
     test.category_inference()
