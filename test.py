@@ -9,17 +9,15 @@ from model.VGG import vgg19_bn
 import torch
 from torch.utils.tensorboard import SummaryWriter
 from torch.utils.data import DataLoader
+from utils.model import swich_model
 import os
 
 
 class Test:
-    def __init__(self, count:int, model_name:str):
+    def __init__(self, count:int, model_category:str, model_name:str):
         self.__count = count
-        self.__model = vgg19_bn(pretrained=False,
-                     progress=False,
-                     num_classes=4,
-                     init_weights=False)
-        self.__model_path = os.path.join("/home/pgj/MushroomClassification", model_name)
+        self.__model = swich_model(model_category)
+        self.__model_path = os.path.join("/home/pgj/MushroomClassification/best_model", model_name)
         self.__model.load_state_dict(torch.load(self.__model_path))
         self.__model.to(torch.device("cuda"))
 
@@ -78,7 +76,8 @@ class Test:
 
 
 if __name__ == '__main__':
-    test = Test(count=2000,
-                model_name="best_2000.pth")
+    test = Test(count=467,
+                model_category="mobileNet",
+                model_name="mobileNet_467.pth")
     test.inference_total()
     test.category_inference()

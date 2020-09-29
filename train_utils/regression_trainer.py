@@ -7,7 +7,9 @@ import logging
 import time
 import os
 from dataset.generate_dataset import mushroom_dataset
+from utils.model import swich_model
 from model.VGG import vgg19, vgg19_bn
+from model.MobileNet import mobilenet_v2
 import numpy as np
 
 logging.getLogger().setLevel(logging.INFO)
@@ -16,7 +18,7 @@ default_save_dir = "/home/pgj/MushroomClassification/params"
 
 
 class Trainer:
-    def __init__(self, max_epoch:int, batch_size=32 ,count=2000,lr=3e-4, weight_decay=1e-3, save_path=default_save_dir):
+    def __init__(self, max_epoch:int, batch_size=32 ,count=2000, model="vgg" , lr=3e-4, weight_decay=1e-3, save_path=default_save_dir):
 
         self.__max_epoch = max_epoch
         self.__batch_size = batch_size
@@ -35,10 +37,7 @@ class Trainer:
         self.__train_loader = self.__dataloaders["train"]
         self.__val_loader = self.__dataloaders["val"]
 
-        self.__net = vgg19_bn(pretrained=True,
-                              progress=False,
-                              num_classes=4,
-                              init_weights=False)
+        self.__net = swich_model(model)
 
         self.__device = torch.device("cuda")
         self.__net.to(self.__device)
