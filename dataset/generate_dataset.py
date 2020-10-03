@@ -7,7 +7,7 @@ class mushroom_dataset(Data.Dataset):
     """
     菌类数据集，返回图片和标签
     """
-    def __init__(self, mode:str, count:int):
+    def __init__(self, mode:str, count:int, img_size:int):
         """
         将文件中的所有路径和标签读到列表中
         :params mode: 模式
@@ -18,6 +18,7 @@ class mushroom_dataset(Data.Dataset):
         self.__mode=  mode
         self.__file_path = "/home/pgj/MushroomClassification/"+self.__mode+"-"+count.__str__()+".txt"
         self.__data_list = []
+        self.__img_size = img_size
 
         with open(self.__file_path, "r") as f:
             for line in f.readlines():
@@ -29,7 +30,7 @@ class mushroom_dataset(Data.Dataset):
         data = self.__data_list[item]
         img_path, label = data
         img = Image.open(img_path).convert("RGB")
-        transform = transforms.Compose([transforms.Resize((224, 224)),
+        transform = transforms.Compose([transforms.Resize((self.__img_size, self.__img_size)),
                                         transforms.ToTensor(),
                                         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
         img = transform(img)

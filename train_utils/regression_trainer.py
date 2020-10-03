@@ -7,7 +7,7 @@ import logging
 import time
 import os
 from dataset.generate_dataset import mushroom_dataset
-from utils.model import swich_model
+from model.get_model import swich_model
 from model.VGG import vgg19, vgg19_bn
 from model.MobileNet import mobilenet_v2
 import numpy as np
@@ -18,14 +18,14 @@ default_save_dir = "/home/pgj/MushroomClassification/params"
 
 
 class Trainer:
-    def __init__(self, max_epoch:int, batch_size=32 ,count=2000, model="vgg" , lr=3e-4, weight_decay=1e-3, save_path=default_save_dir):
+    def __init__(self, max_epoch:int, batch_size=32 ,count=2000, model="vgg", img_size=224, lr=3e-4, weight_decay=1e-3, save_path=default_save_dir):
 
         self.__max_epoch = max_epoch
         self.__batch_size = batch_size
         self.__lr = lr
         self.__weight_decay = weight_decay
 
-        self.__datasets = {x: mushroom_dataset(x, count) for x in ["train", "val"]}
+        self.__datasets = {x: mushroom_dataset(x, count, img_size) for x in ["train", "val"]}
         self.__dataloaders = {x: DataLoader(dataset=self.__datasets[x],
                                             batch_size=self.__batch_size if x == "train" else 1,
                                             shuffle=True,
@@ -37,6 +37,7 @@ class Trainer:
         self.__train_loader = self.__dataloaders["train"]
         self.__val_loader = self.__dataloaders["val"]
 
+        self.__model_name = model
         self.__net = swich_model(model)
 
         self.__device = torch.device("cuda")
@@ -66,8 +67,14 @@ class Trainer:
                 self.__optimizer.zero_grad()
                 imgs = imgs.to(self.__device)
                 labels = labels.to(self.__device)
-                outputs = self.__net(imgs)
-                loss = self.__criterion(outputs, labels)
+                if self.__model_name == "inception":
+                    outputs, aux_outputs = self.__net(imgs)
+                    loss1 = self.__criterion(outputs, labels)
+                    loss2 = self.__criterion(aux_outputs, labels)
+                    loss = loss1+loss2
+                else:
+                    outputs = self.__net(imgs)
+                    loss = self.__criterion(outputs, labels)
                 loss.backward()
                 self.__optimizer.step()
             self.__writer.add_scalar("Loss/train", np.array(loss.to(torch.device("cpu")).data).item(), epoch)
@@ -82,7 +89,8 @@ class Trainer:
                 for step, (imgs, labels) in enumerate(self.__val_loader):
                     imgs = imgs.to(self.__device)
                     labels = labels.to(self.__device)
-                    predict = torch.max(nn.functional.softmax(self.__net(imgs), dim=1), dim=1).indices.reshape(-1, 1)
+                    outputs = self.__net(imgs)
+                    predict = torch.max(nn.functional.softmax(outputs, dim=1), dim=1).indices.reshape(-1, 1)
                     acc_count += (predict == labels).sum().item()
             self.__writer.add_scalar("Val/train", acc_count, epoch)
 

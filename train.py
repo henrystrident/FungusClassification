@@ -4,5 +4,5 @@ import os
 
 if __name__ == '__main__':
     os.environ['CUDA_VISIBLE_DEVICES'] = "0"
-    trainer = Trainer(100, batch_size=32, count=2000, model="mobileNet")
+    trainer = Trainer(50, batch_size=32, count=2000, model="inception", img_size=299)
     trainer.train()
